@@ -263,8 +263,8 @@
       .hero::before {
         content: "";
         position: absolute;
-        width: 700px;
-        height: 700px;
+        width: clamp(300px, 50vw, 700px);
+        height: clamp(300px, 50vw, 700px);
         border-radius: 50%;
         background: radial-gradient(
           circle,
@@ -279,8 +279,8 @@
       .hero::after {
         content: "";
         position: absolute;
-        width: 500px;
-        height: 500px;
+        width: clamp(250px, 40vw, 500px);
+        height: clamp(250px, 40vw, 500px);
         border-radius: 50%;
         background: radial-gradient(
           circle,
@@ -1197,18 +1197,32 @@
       @media (max-width: 560px) {
         .hero {
           padding-top: calc(var(--nav-h) + 40px);
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .hero::before {
+          display: none;
+        }
+        .hero::after {
+          display: none;
         }
         .section {
           padding: 72px 0;
         }
         .container {
-          padding: 0 20px;
+          padding: 0 16px;
         }
         .form-row {
           grid-template-columns: 1fr;
         }
         .about-stats {
           grid-template-columns: 1fr 1fr;
+        }
+        .nav__logo {
+          font-size: 0.75rem;
+        }
+        .section__title {
+          font-size: clamp(1.5rem, 4vw, 2rem);
         }
       }
     </style>

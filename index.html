@@ -248,13 +248,15 @@
       }
 
       .hero__image {
-        aspect-ratio: 4 / 5;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding: 24px 22px 8px;
       }
 
       .hero__image img {
-        width: 100%;
-        height: 100%;
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
         object-fit: cover;
       }
 
@@ -664,8 +666,12 @@
               <span class="chip">HTML, CSS, JavaScript, React</span>
             </div>
             <div class="hero__actions">
-              <a class="button button--primary" href="#projects">View projects</a>
-              <a class="button button--secondary" href="#contact">Get in touch</a>
+              <a class="button button--primary" href="#projects"
+                >View projects</a
+              >
+              <a class="button button--secondary" href="#contact"
+                >Get in touch</a
+              >
             </div>
             <div class="hero__subnav" aria-label="Quick links">
               <a href="#projects">Latest work</a>
@@ -689,13 +695,30 @@
               </p>
               <ul class="hero__list">
                 <li><span>Based in</span><strong>Oxford, UK</strong></li>
-                <li><span>Background</span><strong>Education + tech</strong></li>
-                <li><span>Focus</span><strong>Front-end web development</strong></li>
-                <li><span>Availability</span><strong>Open to opportunities</strong></li>
+                <li>
+                  <span>Background</span><strong>Education + tech</strong>
+                </li>
+                <li>
+                  <span>Focus</span><strong>Front-end web development</strong>
+                </li>
+                <li>
+                  <span>Availability</span
+                  ><strong>Open to opportunities</strong>
+                </li>
               </ul>
               <div class="hero__small-links">
-                <a href="https://github.com/heatherflute" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/theheathervisser/" target="_blank" rel="noopener">LinkedIn</a>
+                <a
+                  href="https://github.com/heatherflute"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/theheathervisser/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
                 <a href="mailto:hello@heather.dev">Email</a>
               </div>
             </div>
@@ -717,7 +740,7 @@
             <article class="project-card project-card--featured">
               <div class="project-card__media">
                 <img
-                  src="images/Screenshot 2026-04-24 at 14.01.48.jpeg"
+                  src="images/Screenshot 2026-05-09 at 19.31.45.jpeg"
                   alt="Screenshot of Heather Visser's developer portfolio"
                 />
               </div>
@@ -736,7 +759,12 @@
                   <span>Accessibility</span>
                 </div>
                 <div class="project-links">
-                  <a href="https://heatherflute.github.io/portfolio/" target="_blank" rel="noopener">Live site</a>
+                  <a
+                    href="https://heatherflute.github.io/portfolio/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live site</a
+                  >
                   <a href="#contact">Ask about this build</a>
                 </div>
               </div>
@@ -745,7 +773,7 @@
             <article class="project-card project-card--half">
               <div class="project-card__media">
                 <img
-                  src="images/Screenshot 2026-04-24 at 14.01.48.jpeg"
+                  src="images/IMG_4667.jpeg"
                   alt="Preview image for a diary app project"
                 />
               </div>
@@ -767,7 +795,7 @@
             <article class="project-card project-card--half">
               <div class="project-card__media">
                 <img
-                  src="images/IMG_0976.jpeg"
+                  src="images/IMG_4670.jpeg"
                   alt="Illustrative image for a weather dashboard"
                 />
               </div>
@@ -791,7 +819,9 @@
         <section class="section" id="about" aria-labelledby="about-title">
           <div class="section-heading">
             <div class="eyebrow">About</div>
-            <h2 id="about-title">A background in teaching shaped how I build.</h2>
+            <h2 id="about-title">
+              A background in teaching shaped how I build.
+            </h2>
             <p>
               My route into tech wasn’t traditional, but it gave me useful
               strengths: clarity, patience, empathy, and a habit of making
@@ -807,12 +837,7 @@
                 shaped how I think about clarity, attention, and the people on
                 the other side of the screen.
               </p>
-              <p>
-                What started as curiosity about how websites work turned into a
-                consistent practice of building, learning, and refining projects
-                one step at a time. I’m especially drawn to front-end work that
-                balances aesthetics with usability.
-              </p>
+
               <ul class="tag-list" aria-label="Core areas">
                 <li>Responsive design</li>
                 <li>Semantic HTML</li>
@@ -886,45 +911,40 @@
             <div class="eyebrow">Contact</div>
             <h2 id="contact-title">Let’s keep this easy.</h2>
             <p>
-              If you’re hiring, collaborating, or want help improving a site, I’d
-              love to hear from you.
+              If you’re hiring, collaborating, or want help improving a site,
+              I’d love to hear from you.
             </p>
           </div>
 
           <div class="contact-layout">
-            <div class="contact-note panel">
-              <p>
-                I’m currently looking for a junior developer role or freelance
-                opportunities where I can contribute thoughtful front-end work
-                and continue growing across the stack.
-              </p>
-              <a class="button button--primary" href="mailto:hello@heather.dev">
-                Email Heather
-              </a>
-            </div>
-
-            <div>
-              <ul class="contact-list">
-                <li>
-                  <a href="https://github.com/heatherflute" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    <span>github.com/heatherflute</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/theheathervisser/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                    <span>linkedin.com/in/theheathervisser</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:hello@heather.dev">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>hello@heather.dev</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="contact-list">
+              <li>
+                <a
+                  href="https://github.com/heatherflute"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>github.com/heatherflute</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/theheathervisser/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  <span>linkedin.com/in/theheathervisser</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@heather.dev">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <span>hello@heather.dev</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
